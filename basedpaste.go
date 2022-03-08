@@ -36,7 +36,7 @@ func (bp *BasedPaste) router(w http.ResponseWriter, r *http.Request) {
 	case "/":
 		switch r.Method {
 		case "GET":
-			t, err := template.ParseFiles("index.html")
+			t, err := template.ParseFiles(bp.IndexPath)
 			if err != nil {
 				log.Fatal(err)
 				http.Error(w, "500 Internal Server Error", 500)
