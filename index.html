@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title></title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🅱️</text></svg>">
+</head>
+<body>
+        <pre>
+BASEDPASTE(1)                   basedpaste                      BASEDPASTE(1)
+
+<strong>NAME</strong>
+        basedpaste - a highly based pastebin and link shortener
+
+<strong>SYNOPSIS</strong>
+        curl -F file=@$FILE $BASEDPASTE_URL
+        curl -F url=$URL $BASEDPASTE_URL
+
+<strong>DESCRIPTION</strong>
+        basedpaste is a web service that hosts files and shortens links, with
+        an emphasis on simplicity. You are currently viewing the instance
+        hosted at <a href="/">{{.Url}}</a>. Its maximum upload size is {{.MaxFileMiB}} MiB.
+
+<strong>OPTIONS</strong>
+        Make a POST request with either 'file' or 'url' as a form-field. Use
+        multipart/form-data, not application/x-www-form-urlencoded. See the
+        documentation for curl(1) or your preferred HTTP client.
+
+        The administrator of a basedpaste instance may optionally require
+        an API key to POST. If this is the case, users must add an 'auth'
+        form-field with their key to requests. This instance {{if .RequireAuth}}<strong>requires</strong>{{else}}does not require{{end}}
+        authentication.
+
+<strong>EXAMPLES</strong>
+        curl -F file=@/tmp/logs.txt {{.Url}}
+        curl -F file=@&lt;(make all) {{.Url}} 
+        curl -F file=@~/.vimrc -F auth='2ab96390c7dbe3439de74d0c9b0b1767' \
+                {{.Url}}        # if API key required
+        curl -F url='https://www.youtube.com/watch?v=dQw4w9WgXcQ' \
+                {{.Url}}
+
+<strong>SEE ALSO</strong>
+        Source code: <a href="https://github.com/tfaughnan/basedpaste">https://github.com/tfaughnan/basedpaste</a>
+        Based alternatives:
+        - <a href="https://0x0.st/">https://0x0.st/</a>
+        - <a href="http://ix.io/">http://ix.io/</a>
+        - <a href="http://sprunge.us/">http://sprunge.us/</a>
+
+<strong>AUTHOR</strong>
+        Thomas Faughnan &lt;&#116;&#111;&#109;&#64;&#116;&#106;&#102;&#46;&#115;&#104;&gt;
+
+basedpaste 0.1.0                2022-03-07                      BASEDPASTE(1)
+        </pre>
+</body>
+</html>

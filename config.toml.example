@@ -1,0 +1,8 @@
+Url = "https://example.com"
+Host = "localhost"
+Port = 8080
+IndexPath = "/home/thomas/.local/share/basedpaste/index.html"
+DbPath = "/home/thomas/.local/share/basedpaste/basedpaste.db"
+UploadsDir = "/home/thomas/.local/share/basedpaste/uploads"
+MaxFileBytes = 33554432
+RequireAuth = false
