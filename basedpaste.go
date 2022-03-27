@@ -96,7 +96,7 @@ func (bp *BasedPaste) add(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		fmt.Fprintf(w, "%s/%s", bp.Url, key)
+		fmt.Fprintf(w, "%s/%s\n", bp.Url, key)
 		return
 	}
 
@@ -118,7 +118,7 @@ func (bp *BasedPaste) add(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprintf(w, "%s/%s", bp.Url, key)
+	fmt.Fprintf(w, "%s/%s\n", bp.Url, key)
 }
 
 func (bp *BasedPaste) addUrl(url string) (string, error) {
