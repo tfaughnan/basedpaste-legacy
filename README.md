@@ -1,9 +1,11 @@
 # basedpaste
 
+**Updated version**: [https://github.com/tfaughnan/basedpaste-legacy](https://github.com/tfaughnan/basedpaste-legacy)
+
 A highly based pastebin and link shortener, written in Go to replace [shhrink].
 
-I run a personal instance at [https://bp.tjf.sh](https://bp.tjf.sh),
-which is read-only for unauthenticated users.
+~~I run a personal instance at [https://bp.tjf.sh](https://bp.tjf.sh),
+which is read-only for unauthenticated users.~~
 Host your own, if you really want to.
 
 ## Installation
