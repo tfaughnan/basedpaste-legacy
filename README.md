@@ -1,7 +1,5 @@
 # basedpaste
 
-**Updated version**: [https://github.com/tfaughnan/basedpaste-legacy](https://github.com/tfaughnan/basedpaste-legacy)
-
 A highly based pastebin and link shortener, written in Go to replace [shhrink].
 
 ~~I run a personal instance at [https://bp.tjf.sh](https://bp.tjf.sh),
